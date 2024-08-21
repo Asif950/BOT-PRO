@@ -18,7 +18,7 @@ handleEvent: function({ api, event, client, __GLOBAL }) {
   const body = content.toLowerCase();
 	if (body.indexOf(" ")==0 || body.indexOf("🕵️‍♀️")==0 || body.indexOf("😡")==0 || body.indexOf(" ")==0) {
 		var msg = {
-				body: "জান তুমি এত রাগ কর কেন 🥹-এই নাও বস 𝐅𝐀𝐇𝐈𝐌 এর থেকে 💋🙈",
+				body: "জান তুমি এত রাগ কর কেন 🥹-এই নাও বস 𝐀𝐒𝐈𝐅 এর থেকে 💋🙈",
 				attachment: fs.createReadStream(__dirname + `/Nayan/ragkro (1).mp3`)
 			}
 			api.sendMessage( msg, threadID, messageID);
