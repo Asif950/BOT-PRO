@@ -28,20 +28,20 @@ var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
   
 var callback = () => api.sendMessage({body:`
 --------------------------------------------
-𝐍𝐚𝐦𝐞       : 𝐌𝐨𝐡𝐚𝐦𝐦𝐚𝐝 𝐅𝐚𝐡𝐢𝐦
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 𝐅𝐀𝐇𝐈𝐌 ヽ・　T.T
+𝐍𝐚𝐦𝐞       : 𝐀𝐒𝐈𝐅
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : 'হাৃৃ্ঁইৃ্ৃঁরেৃ্ঁ' 'মৃৃ্ঁত্যুৃ্ঁ' 'কৃ্ঁয়ৃ্ঁ' 'তুৃঁইৃ্ঁ'
 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧   : 𝐈𝐬𝐥𝐚𝐦
-𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐍𝐨𝐫𝐬𝐢𝐧𝐠𝐝𝐢 , 𝐃𝐡𝐚𝐤𝐚
-𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: 𝐍𝐨𝐫𝐬𝐢𝐧𝐠𝐝𝐢 ,𝐑𝐚𝐢𝐩𝐮𝐫𝐚
+𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: CHITTAGONG , 𝐃𝐡𝐚𝐤𝐚
+𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: CHITTAGONG ,SITAKUNDU
 𝐆𝐞𝐧𝐝𝐞𝐫.   : 𝐌𝐚𝐥𝐞
 𝐀𝐠𝐞           : 𝟏𝟖+
 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧𝐬𝐡𝐢𝐩 : 𝐒𝐢𝐧𝐠𝐥𝐞
 𝐖𝐨𝐫𝐤        : 𝐒𝐭𝐮𝐝𝐞𝐧𝐭
-𝐆𝐦𝐚𝐢𝐥       : md.fahim.miha07@gmail.com
-𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: wa.me/+8801315086453
-𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : t.me/MOHAMEDFAHIM143
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/profile.php?id=100089843872421`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
+𝐆𝐦𝐚𝐢𝐥       : md0130240011@gmail.com
+𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: wa.me/+8801302400111
+𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : t.me/fmz999cyber
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/profile.php?id=100000739035643`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://graph.facebook.com/100089843872421/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
+      return request(encodeURI(`https://graph.facebook.com/100000739035643/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
    };
