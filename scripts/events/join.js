@@ -2,7 +2,7 @@ module.exports.config = {
   name: "join",
   eventType: ['log:subscribe'],
   version: "1.0.0",
-  credits: "Mirai-Team", // FIXED BY YAN Nayan
+  credits: "𝐀𝐒𝐈𝐅", // FIXED BY YAN 𝐀𝐒𝐈𝐅
   description: "GROUP UPDATE NOTIFICATION"
 };
 
@@ -56,7 +56,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("বাচ্চারা চলে এসেছি আমি পিচ্চি ফাহিম তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("বাচ্চারা চলে এসেছি আমি পিচ্চি 𝐀𝐒𝐈𝐅 তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,15 +66,14 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER :𝐅𝐀𝐇𝐈𝐌 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘
-
+DEVELOPER :𝐀𝐒𝐈𝐅
 🟣Facebook Account Link: 
 
-https://www.facebook.com/profile.php?id=100089843872421
+https://www.facebook.com/profile.php?id=100000739035643
 
-🔵WHATSAPP NUMBER: wa.me/+8801315086453
+🔵WHATSAPP NUMBER: wa.me/+8801302400111
 
-🟢SUPPORT EMAIL: md.fahim.miha07@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+🟢SUPPORT EMAIL: md0130240011@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
